@@ -48,7 +48,7 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
-mongoose.connect("mongodb+srv://admin:moosa@cluster0.4ngob.mongodb.net/test", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log("connected to mongodb")).catch
+mongoose.connect("mongodb+srv://admin:moosa@cluster0.4ngob.mongodb.net/Cluster0", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log("connected to mongodb")).catch
   ((error) => console.log(error.message));
 
 module.exports = app;
