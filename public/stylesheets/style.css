@@ -1,0 +1,15 @@
+
+.rating label{
+    display: inline;
+    cursor: pointer;
+    width: 40px;
+    background: #ccc;
+}
+.rating label:before
+{
+    content:'⭐';
+    font-family: fontAwesome;
+    position: relative;
+    
+    font-size: 50px;
+}

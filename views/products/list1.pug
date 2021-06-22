@@ -1,0 +1,37 @@
+extends ../layout
+
+block content 
+     
+    table.table 
+        thead   
+            tr 
+                th name 
+                th price
+                th Description
+                th Ratings
+
+        tbody 
+            each prod in products
+                tr 
+                    td=prod.name
+                    td=prod.price
+                    td=prod.Description
+                    td 
+                        <div class='rating'>
+                            <ul id='stars'>
+                                input(type="radio",name="star", id="star1")
+                                label(for="star1") 
+                                input(type="radio",name="star", id="star2")
+                                label(for="star2") 
+                                input(type="radio",name="star", id="star3")
+                                label(for="star3") 
+                                input(type="radio",name="star", id="star4")
+                                label(for="star4") 
+                                input(type="radio",name="star", id="star5")
+                                label(for="star5") 
+                                input(type="radio",name="star", id="star6")
+                                label(for="star6") 
+                            </ul>
+                        </div>
+                    
+                        
